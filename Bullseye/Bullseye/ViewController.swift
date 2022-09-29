@@ -18,6 +18,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var resultLabel: UILabel!
     @IBOutlet weak var playAgainButton: UIButton!
     @IBOutlet weak var rangeLabel: UILabel!
+    @IBOutlet weak var hintSwitch: UISwitch!
     
     var randomNumber: Int = 0
     var range: Int = 100
@@ -53,8 +54,13 @@ class ViewController: UIViewController {
                 resultLabel.isHidden = true
                 playAgainButton.isHidden = true
             } else {
-                playAgainButton.isHidden = false
-                resultLabel.text = "Whoops! You missed ! Try again later"
+                if hintSwitch.isOn == false {
+                    playAgainButton.isHidden = false
+                    resultLabel.text = "Whoops! You missed ! Try again later"
+                } else {
+                    playAgainButton.isHidden = false
+                    resultLabel.text = "You were \(Int(numSlider.value) - Int(randomNumber)) away!"
+                }
             }
         } else {
             if randomNumber == Int(numSlider.value) {
@@ -70,8 +76,13 @@ class ViewController: UIViewController {
                 resultLabel.isHidden = true
                 playAgainButton.isHidden = true
             } else {
-                playAgainButton.isHidden = false
-                resultLabel.text = "OMG! You missed it!"
+                if hintSwitch.isOn == false {
+                    playAgainButton.isHidden = false
+                    resultLabel.text = "OMG! You missed it!"
+                } else {
+                    playAgainButton.isHidden = false
+                    resultLabel.text = "You were \(Int(numSlider.value) - Int(randomNumber)) away!"
+                }
             }
         }
         resultLabel.isHidden = false

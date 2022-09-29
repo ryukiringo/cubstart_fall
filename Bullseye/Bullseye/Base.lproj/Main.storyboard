@@ -108,6 +108,17 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Hint mode" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bZX-ag-g9k">
+                                <rect key="frame" x="31" y="730" width="93" height="23"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="jLp-D4-sDa">
+                                <rect key="frame" x="42" y="766" width="49" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </switch>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jfA-xN-u48">
                                 <rect key="frame" x="16" y="626" width="358" height="61"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -123,6 +134,7 @@
                         <outlet property="currentLevel" destination="VAk-Eu-qYi" id="LS3-UX-sJE"/>
                         <outlet property="exactSwitch" destination="3zk-RK-aRe" id="HYt-pt-Gbw"/>
                         <outlet property="highScore" destination="Vca-ua-nSi" id="llP-Mk-P63"/>
+                        <outlet property="hintSwitch" destination="jLp-D4-sDa" id="c3Q-Em-MWZ"/>
                         <outlet property="numSlider" destination="3Il-hl-G8k" id="kQN-C8-odH"/>
                         <outlet property="numlabel" destination="I7n-DI-x6k" id="Pnm-dM-Hqu"/>
                         <outlet property="playAgainButton" destination="YCe-7x-xks" id="xgl-6O-rLd"/>
